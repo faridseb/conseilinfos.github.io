@@ -16,8 +16,15 @@ body{
     height: 100vh;
 }
 
+.container{
+    width: 320px;
+}
+
 .container .box{
     margin: 20px 0;
+}
+.container .box label{
+    color: white;
 }
 .container .box input{
     width: 100%;
@@ -30,16 +37,22 @@ body{
 
 .container h1{
     text-align: center;
+    border-bottom: 1px solid white;
+    color: white;
 }
 
 .container .box1 input{
-    width:400px;
+    width:100%;
     padding: 10px;
     cursor: pointer;
     border: none;
     border-radius: 7px;
     background-color: rgb(14, 11, 11);
     color: white;
+}
+
+.container .box input::placeholder{
+    font-size: 17px;
 }
 
 .container .box1 input:hover{

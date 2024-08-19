@@ -16,20 +16,36 @@ body{
     height: 100vh;
 }
 
+.container{
+    width: 420px;
+}
+
 .container .box{
     margin: 20px 0;
 }
 .container .box input{
-    width: 100%;
+    width: 100% ;
     padding: 10px;
     text-align: center;
     border-radius: 7px;
     border: none;
     outline-color: rgb(70, 70, 184);
+    font-size: 15px;
+}
+
+.container .box input::placeholder{
+    font-size: 17px;
+    color: rgb(115, 106, 106);
+}
+
+.container .box label{
+    color: white;
 }
 
 .container h1{
     text-align: center;
+    border-bottom: 1px solid white;
+    color: white;
 }
 
 .container .box1 input{
@@ -63,4 +79,15 @@ body{
 
 .container a:hover{
     color: red;
+}
+
+
+@media screen and (max-width : 900px) {
+    .container{
+        width: 320px;
+    }
+
+    .container p{
+        font-size: 12px;
+    }
 }
