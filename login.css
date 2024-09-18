@@ -9,19 +9,23 @@
 }
 
 body{
-    background-image: linear-gradient(to left,rgb(43, 43, 123),rgb(170, 160, 160));
+    /*background-image: linear-gradient(to left,rgb(43, 43, 123),rgb(170, 160, 160));*/
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    
 }
 
 .container{
     width: 420px;
+    box-shadow: 0 1px 5px black;
+    padding: 20px;
+    border-radius: 15px;
 }
 
 .container .box{
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .container .box input{
     width: 100% ;
@@ -31,26 +35,27 @@ body{
     border: none;
     outline-color: rgb(70, 70, 184);
     font-size: 15px;
+    background-color: #f2f2f2;
 }
 
 .container .box input::placeholder{
     font-size: 17px;
-    color: rgb(115, 106, 106);
+    color: black;
 }
 
 .container .box label{
-    color: white;
+    color: black;
 }
 
 .container h1{
     text-align: center;
-    border-bottom: 1px solid white;
-    color: white;
+    border-bottom: 1px solid black;
+    color: black;
 }
 
 .container .box1 input{
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
     border: none;
     border-radius: 7px;
@@ -71,7 +76,7 @@ body{
 
 .container p{
     margin-top: 10px;
-    color: white;
+    color: black;
 }
 .container a{
     color: black;
@@ -80,7 +85,15 @@ body{
 .container a:hover{
     color: red;
 }
-
+.erreur{
+    backdrop-filter: blur(100px);
+    box-shadow: 0 1px 5px black;
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
 
 @media screen and (max-width : 900px) {
     .container{
